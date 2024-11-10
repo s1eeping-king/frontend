@@ -1,22 +1,20 @@
-// src/components/GameEndModal.tsx
+// src/components/GameEndScreen.tsx
 
 import React from 'react';
 
-interface GameEndModalProps {
+interface GameEndScreenProps {
     score: number;
     onRestart: () => void;
 }
 
-const GameEndModal: React.FC<GameEndModalProps> = ({ score, onRestart }) => {
+const GameEndScreen: React.FC<GameEndScreenProps> = ({ score, onRestart }) => {
     return (
-        <div className="game-end-modal">
+        <div className="game-end-screen">
             <h2>Game Over</h2>
-            <p>Your Score: {score}</p>
-            <button onClick={onRestart} className="restart-button">
-                Restart Game
-            </button>
+            <p>Final Score: {score}</p>
+            <button onClick={onRestart}>Restart</button>
         </div>
     );
 };
 
-export default GameEndModal;
+export default GameEndScreen;

@@ -1,5 +1,5 @@
 import * as React from "react";
-const SvgPath = (/** @type {import("react/jsx-runtime").JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>} */ props) => (
+const SvgPath = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={282}
